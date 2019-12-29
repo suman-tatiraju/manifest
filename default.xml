@@ -3,6 +3,5 @@
   <include name="qcom.xml"/>
   
   <remote fetch="https://github.com/suman-tatiraju/" name="lyft"/>
-  <default remote="lyft" revision="master" upstream="master"/>
-  <project name="soc-android" path="."/>
+  <project name="soc-android" path="." remote="lyft" revision="master" upstream="master"/>
 </manifest>
