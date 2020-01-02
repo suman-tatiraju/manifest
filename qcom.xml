@@ -22,17 +22,22 @@
   <project name="device/google/atv" revision="31f4b79890e91bb7ff193992ace4fd1f71911514" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="device/google/contexthub" revision="44de24446a389731cf8bca3cd61d80c61d805cf1" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="device/google/vrservices" revision="9a9bf4622a12cefc22467cc1f53a31c1b43df0dd" upstream="android-framework.lnx.2.9.1.r4-rel"/>
+  <!--
   <project name="device/qcom/common" revision="a39c164da4e4432514c0bce160fb4c5658f977ca" upstream="qcom-devices.lnx.1.9.r4-rel">
     <copyfile dest="build.sh" src="build.sh"/>
     <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
   <project name="device/qcom/sepolicy" revision="7b33fe69ccb3bb9ec6ac5d9d4e1991050ad28ef9" upstream="sepolicy.lnx.2.9.r4-rel"/>
+  -->
   <project name="device/sample" revision="204d8c1ee9985ac2bd125a975cbbd37b01fa8d00" upstream="android-framework.lnx.2.9.1.r4-rel"/>
+  <!--
   <project name="kernel/lk" path="bootable/bootloader/lk" revision="eddf34437b20f08d21265f4443e63689b083812c" upstream="lk.lnx.1.9.r4-rel"/>
   <project name="kernel/msm-3.18" revision="f859095c345eb5f31328c33c746d8fda6a28d9ac" upstream="kernel.lnx.3.18.r23-rel"/>
+  -->
   <project name="platform/art" path="art" revision="2cfd1f058c74df9b40713fbcb08ecf0ba95ad573" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/bionic" path="bionic" revision="61751ae48b3231b3403f652e6a3d3a085b6ac6c9" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/bootable/recovery" path="bootable/recovery" revision="c2b88396c49105d6d92f44f1acacea65644e582a" upstream="android-framework.lnx.2.9.1.r4-rel"/>
+  <!--
   <project name="platform/build" path="build/make" revision="4fcf17bd308208dd5f1fd5591ce154b1d2fa1967" upstream="android-framework.lnx.2.9.1.r4-rel">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
@@ -42,6 +47,7 @@
     <linkfile dest="build/target" src="target"/>
     <linkfile dest="build/tools" src="tools"/>
   </project>
+  -->
   <project name="platform/build/blueprint" path="build/blueprint" revision="cb98a86f0f1e8dd8cc004882d0ca090fc6c95c4a" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/build/kati" path="build/kati" revision="4fdae3ec75648dcc2e673aee0d128f4e254af258" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/build/soong" path="build/soong" revision="e12b407865c4112ff22e533f7932b0cdf150192b" upstream="android-framework.lnx.2.9.1.r4-rel">
@@ -341,7 +347,9 @@
   <project name="platform/external/zopfli" path="external/zopfli" revision="069cb023c39358bc0e1b3dc0397b8fcdd84b4d44" upstream="android-external.lnx.2.9.1.r4-rel"/>
   <project name="platform/external/zxing" path="external/zxing" revision="fedf8f2d8099bf7bb85dc3db8699343d56617deb" upstream="android-external.lnx.2.9.1.r4-rel"/>
   <project name="platform/frameworks/av" path="frameworks/av" revision="406ae2f4e79c27af00d7f7284493a419dc44c6eb" upstream="av-aosp.lnx.2.9.1.r4-rel"/>
+  <!--
   <project name="platform/frameworks/base" path="frameworks/base" revision="39e003387f8ec1743cca6213dea4bc7e340f9876" upstream="android-framework.lnx.2.9.1.r4-rel"/>
+  -->
   <project name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="0b0e6ff45b5aaea59107d215b7d714da5107e98e" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="a28f53c332faada5d2ee3fccc26d84e3bc92fce2" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="a236444621b68da68289ac221f670211a444bf05" upstream="android-framework.lnx.2.9.1.r4-rel"/>
@@ -369,7 +377,9 @@
   <project name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="fd6999a7a2c0fd4120e705e8487ae09a92febcbd" upstream="wlan-aosp.lnx.2.9.1.r4-rel"/>
   <project name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" revision="fad09de906c8ff0b1aaa21f73c4745c8e1c8b160" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" revision="dfecf24f597082568037a18d4d68397efba7e8c0" upstream="android-framework.lnx.2.9.1.r4-rel"/>
+  <!--
   <project name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" revision="5239f9f41d8b392e29dc664f0235cadfc363162b" upstream="atel.lnx.2.9.1.r4-rel"/>
+  -->
   <project name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" revision="98e8949b809f64fbc029eac649043a941b9199f4" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" revision="15188c71cbcf4d5b65abf4d47fd79b59e089428b" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/frameworks/rs" path="frameworks/rs" revision="52a6ca84733cd25e1494c34d39d11d89cc69c830" upstream="android-framework.lnx.2.9.1.r4-rel"/>
@@ -394,7 +404,9 @@
   <project name="platform/hardware/qcom/sensors" path="hardware/qcom/sensors" revision="ed97062af25225e383d1e600a7eb811a2fb726b5" upstream="sensors-hal-native.lnx.1.0.r1-rel"/>
   <project name="platform/hardware/qcom/thermal" path="hardware/qcom/thermal" revision="7ef70ed9d8df4e1cd5253191ba947153f2bf3597" upstream="qvr.lnx.3.0.r4-rel"/>
   <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" revision="9ee32fed9dc0b19a3b05f25844dadd93e3c7d583" upstream="qvr.lnx.3.0.r4-rel"/>
+  <!--
   <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="6041eb4e9c2c39f69575627f81313397683df293" upstream="wlan-aosp.lnx.2.9.1.r4-rel"/>
+  -->
   <project name="platform/hardware/ril" path="hardware/ril" revision="9db7c8f253bb4edf23adb0ecf4b156eccbe50003" upstream="atel.lnx.2.9.1.r4-rel"/>
   <project name="platform/libcore" path="libcore" revision="ac3271f25cbedef238e46a7d85a0de753a0a80ae" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/libnativehelper" path="libnativehelper" revision="56cb00aa7e96f53b211b3b835d99389bc4a22232" upstream="android-framework.lnx.2.9.1.r4-rel"/>
@@ -424,7 +436,9 @@
   <project name="platform/packages/apps/Contacts" path="packages/apps/Contacts" revision="63859524a5ce42613e874613471fd9dc67b0b69a" upstream="android_ui.lnx.2.9.1.r4-rel"/>
   <project name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" revision="2d4ff7757aae07e0f363f71a51ec7256904bec0e" upstream="android_ui.lnx.2.9.1.r4-rel"/>
   <project name="platform/packages/apps/DevCamera" path="packages/apps/DevCamera" revision="e4d7dcd2fa0285db0f0b2ebeac663b2524f47e80" upstream="android-framework.lnx.2.9.1.r4-rel"/>
+  <!--
   <project name="platform/packages/apps/Dialer" path="packages/apps/Dialer" revision="4d91dc90a3d5cef0cc0f920aaff30306b66b7dd5" upstream="atel.lnx.2.9.1.r4-rel"/>
+  -->
   <project name="platform/packages/apps/DocumentsUI" path="packages/apps/DocumentsUI" revision="62bf72d415fa2d93f171004e095a3dc7bd852ecf" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/packages/apps/Email" path="packages/apps/Email" revision="6b1e7945ff1060edefd44f2c2ddf169c02563466" upstream="android_ui.lnx.2.9.1.r4-rel"/>
   <project name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" revision="77abfe47bdaf3bb4683d317253291f05774e8c81" upstream="android-framework.lnx.2.9.1.r4-rel"/>
@@ -535,8 +549,10 @@
   <project name="platform/system/chre" path="system/chre" revision="eb95c41537651d5e386311ba1b2e48748cc7f468" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="32488cc7c319ddc41d3f16b78a21248630c9af26" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="f5dede8f87553b59bd3db9d2e92f70a6147e912a" upstream="android-framework.lnx.2.9.1.r4-rel"/>
+  <!--
   <project name="platform/system/core" path="system/core" revision="8e3aa50e2c75b5fa03ea2fe2ba0ed3f72c86dd7a" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/system/extras" path="system/extras" revision="b0fb686bdaaf8430feb05bb8c0eff261bf3ce941" upstream="android-framework.lnx.2.9.1.r4-rel"/>
+  -->
   <project name="platform/system/gatekeeper" path="system/gatekeeper" revision="3dae23b16d2f7549e8d9bbe5542535c0fdded6dd" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="c4ef320d0eccf5e971e1ef20bcc7257815e5dc4b" upstream="android-framework.lnx.2.9.1.r4-rel"/>
   <project name="platform/system/hwservicemanager" path="system/hwservicemanager" revision="4ac5f1af3bab9f2a3b20af5b71e50ddc6af4d1d1" upstream="android-framework.lnx.2.9.1.r4-rel"/>
@@ -601,7 +617,9 @@
   <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" revision="634d844d131a4868718718f77cd8057dc20c7690" upstream="wlan-driver.lnx.1.9.r4-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/qcacld-2.0" path="vendor/qcom/opensource/wlan/qcacld-2.0" revision="f095fd44399587cfc115fdf01d010c122d2c1dc6" upstream="wlan-cld2.driver.lnx.1.9.r4-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="0b06dc87200968e7155e10e69a164d6da69552da" upstream="wlan-service.lnx.1.9.r4-rel"/>
+  <!--
   <project name="platform/vendor/qcom/ferrum" path="device/qcom/msm8909" revision="c55a9dd54dcea4cd34ab0e799168b52348dc7763" upstream="qcom-devices.lnx.1.9.r4-rel"/>
+  -->
   <project name="platform/vendor/qcom/msm8909_512go" path="device/qcom/msm8909_512go" revision="defa9356fc3b98e3d11b3aa4b2a7b7e7115ae3e4" upstream="refs/heads/qcom-devices.lnx.1.9.r4-rel"/>
   <project name="platform/vendor/qcom/msm8909go" path="device/qcom/msm8909go" revision="1be29f37e3032222d4617b025511f8d3627693f3" upstream="qcom-devices.lnx.1.9.r4-rel"/>
   <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="e43c860a9f9b8c476d6f1a25cb283e4b49ebdd47" upstream="qcom-devices.lnx.1.9.r4-rel"/>

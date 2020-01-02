@@ -3,5 +3,28 @@
   <include name="qcom.xml"/>
   
   <remote fetch="https://github.com/suman-tatiraju/" name="lyft"/>
-  <project name="soc-android" path="." remote="lyft" revision="master" upstream="master"/>
+  <project name="LA-platform-build" path="build/make" remote="lyft" revision="master" upstream="master">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+  <project name="LA_device_qcom_common" path="device/qcom/common" remote="lyft" revision="master" upstream="master">
+    <copyfile dest="build.sh" src="build.sh"/>
+    <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+  <project name="LA_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="lyft" revision="master" upstream="master"/>
+  <project name="LA_device_qcom_msm8909" path="device/qcom/msm8909" remote="lyft" revision="master" upstream="master"/>
+  <project name="LA_platform_frameworks_base" path="frameworks/base" remote="lyft" revision="master" upstream="master"/>
+  <project name="LA_platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="lyft" revision="master" upstream="master"/>
+  <project name="LA_platform_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="lyft" revision="master" upstream="master"/>
+  <project name="kernel_lk" path="bootable/bootloader/lk" remote="lyft" revision="master" upstream="master"/>
+  <project name="kernel-msm-3.18" path="kernel/msm-3.18" remote="lyft" revision="master" upstream="master"/>
+  <project name="LA_platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="lyft" revision="master" upstream="master"/>
+  <project name="LA_platform_system_core" path="system/core" remote="lyft" revision="master" upstream="master"/>
+  <project name="LA_platform_system_extras" path="system/extras" remote="lyft" revision="master" upstream="master"/>
+  <project name="LA_vendor_qcom_proprietary" path="vendor/qcom/proprietary" remote="lyft" revision="master" upstream="master"/>
 </manifest>
