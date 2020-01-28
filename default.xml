@@ -27,4 +27,5 @@
   <project name="LA_platform_system_core" path="system/core" remote="lyft" revision="master" upstream="master"/>
   <project name="LA_platform_system_extras" path="system/extras" remote="lyft" revision="master" upstream="master"/>
   <project name="LA_vendor_qcom_proprietary" path="vendor/qcom/proprietary" remote="lyft" revision="master" upstream="master"/>
+  <project name="platform/external/can-utils" path="external/can-utils" remote="caf" revision="master" upstream="can-utils-external-platform.lnx.1.0.r2-rel"/>
 </manifest>
