@@ -3,7 +3,7 @@
   <include name="qcom_sc200.xml"/>
   <remote fetch="ssh://git@github.com/lyft" name="lyft"/>
   <remote fetch="ssh://git@github.com/suman-tatiraju" name="sumant"/>
-  <project name="sc200_build_make" path="build/make" revision="master" upstream="master">
+  <project name="sc200_build_make" path="build/make" remote="sumant" revision="master" upstream="master">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
