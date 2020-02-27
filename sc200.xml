@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="qcom_sc200.xml"/>
+  <remote fetch="ssh://git@github.com/lyft" name="lyft"/>
+  <remote fetch="ssh://git@github.com/suman-tatiraju" name="sumant"/>
+  <project name="sc200_build_make" path="build/make" revision="master" upstream="master">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+  <project name="sc200_bootloader_lk" path="bootable/bootloader/lk" remote="sumant" revision="master" upstream="master"/> 
+  <project name="sc200-kernel-msm4.9" path="kernel/msm-4.9" remote="sumant" revision="master" upstream="master"/>
+  <project name="sc200-device_qcom_common" path="device/qcom/common" remote="sumant" revision="master" upstream="master">
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+    <linkfile dest="kernel/Android.mk" src="stop_scan.mk"/>
+    <linkfile dest="disregard/Android.mk" src="stop_scan.mk"/>
+  </project>
+  <project name="sc200_qcom_proprietary" path="vendor/qcom/proprietary" remote="sumant" revision="master" upstream="master"/>
+  <project name="sc200_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="sumant" revision="master" upstream="master"/>
+  <project name="sc200_msm8937_32go" path="device/qcom/msm8937_32go" remote="sumant" revision="master" upstream="master"/>
+  <project name="sc200_msm8937_32" path="device/qcom/msm8937_32" remote="sumant" revision="master" upstream="master"/>
+  <project name="sc200_msm8937_64" path="device/qcom/msm8937_64" remote="sumant" revision="master" upstream="master"/>
+
+</manifest>
